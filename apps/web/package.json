@@ -3,16 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "bun run generate-llms && next build",
+    "build": "next build",
     "clean": "git clean -xdf",
     "dev": "next dev",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
-    "generate-llms": "bun run scripts/generate-llms.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "start": "next start",
-    "typecheck": "contentlayer2 build && tsc --noEmit"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "contentlayer2": "0.5.3",

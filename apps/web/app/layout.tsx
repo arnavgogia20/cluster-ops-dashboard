@@ -2,7 +2,6 @@ import { ThemeModeScript } from "flowbite-react";
 import { Inter as InterFont } from "next/font/google";
 import type { Metadata, Viewport } from "next/types";
 import type { PropsWithChildren } from "react";
-import { FathomScript } from "~/components/fathom-script";
 import { ThemeInit } from "../.flowbite-react/init";
 
 import "~/styles/globals.css";
@@ -13,8 +12,7 @@ const interFont = InterFont({
 });
 
 export const metadata: Metadata = {
-  description:
-    "Flowbite React is an open-source UI component library built with React components, Tailwind CSS utility classes and based on the Flowbite design system and components.",
+  description: "Multi-Cluster Resource & Health Overview — A frontend-only UX exploration for Kubernetes operators.",
   icons: {
     icon: [
       { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
@@ -28,20 +26,15 @@ export const metadata: Metadata = {
     charSet: "utf-8",
     lang: "en",
   },
-  title: "Flowbite React - UI Component Library",
+  title: "ClusterOps Dashboard",
   openGraph: {
-    description:
-      "Flowbite React is an open-source UI component library built with React components, Tailwind CSS utility classes and based on the Flowbite design system and components.",
-    images: "https://flowbite.s3.amazonaws.com/github/flowbite-react.png",
-    title: "Flowbite React - UI Component Library",
+    description: "Multi-Cluster Resource & Health Overview — A frontend-only UX exploration for Kubernetes operators.",
+    title: "ClusterOps Dashboard",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Flowbite React - UI component library",
-    description:
-      "Flowbite React is an open-source UI component library built with React components, Tailwind CSS utility classes and based on the Flowbite design system and components.",
-    creator: "@zoltanszogyenyi",
-    images: ["https://flowbite.s3.amazonaws.com/github/flowbite-react.png"],
+    title: "ClusterOps Dashboard",
+    description: "Multi-Cluster Resource & Health Overview — A frontend-only UX exploration for Kubernetes operators.",
   },
 };
 
@@ -60,10 +53,9 @@ export default function RootLayout({ children }: PropsWithChildren) {
       <head>
         <ThemeModeScript />
       </head>
-      <body className="bg-white text-gray-600 antialiased dark:bg-gray-900 dark:text-gray-400">
+      <body className="bg-gray-50 text-gray-700 antialiased dark:bg-gray-900 dark:text-gray-300">
         <ThemeInit />
         {children}
-        <FathomScript />
       </body>
     </html>
   );
