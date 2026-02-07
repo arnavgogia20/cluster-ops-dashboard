@@ -4,10 +4,9 @@ const flowbiteReact = require("flowbite-react/plugin/tailwindcss");
 module.exports = {
   darkMode: ["variant", "&:is(.dark *)&:not(.light *)"],
   content: [
-    "./app/**/*.{js,jsx,md,mdx,ts,tsx}",
-    "./components/**/*.{js,jsx,md,mdx,ts,tsx}",
+    "./app/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
     "./data/**/*.{js,jsx,ts,tsx}",
-    "./examples/**/*.{js,jsx,ts,tsx}",
     ".flowbite-react/class-list.json",
   ],
   theme: {
