@@ -2,7 +2,7 @@ import { ThemeModeScript } from "flowbite-react";
 import { Inter as InterFont } from "next/font/google";
 import type { Metadata, Viewport } from "next/types";
 import type { PropsWithChildren } from "react";
-import { ThemeInit } from "../.flowbite-react/init";
+// import { ThemeInit } from "../.flowbite-react/init";
 
 import "~/styles/globals.css";
 
@@ -54,7 +54,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <ThemeModeScript />
       </head>
       <body className="bg-gray-50 text-gray-700 antialiased dark:bg-gray-900 dark:text-gray-300">
-        <ThemeInit />
+        {/* <ThemeInit /> */}
         {children}
       </body>
     </html>
